@@ -9,16 +9,37 @@
 </head>
 
 <body>
-    <div class="side"></div>
-    <main>
-        <div class="top">
-            <a href="#">Home</a>
+    <div class="side">
+        <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">FAQs</a>
             <a href="#">Contact Me</a>
         </div>
+    </div>
+    <main id="show-login">
+        <div class="top">
+            <div id="weatherModal" class="modal">
+                <div class="modal-content">
+                    <form id="form-1">
+                        <label for="location">Location:</label><br>
+                        <input type="text" id="location" name="location" value="City, ST"><br>
+                        <input type="submit" id="get" value="Get Weather">
+                    </form>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <form>
+                        <label for="fname">Username:</label><br>
+                        <input type="text" id="uname" name="user" value="Username"><br>
+                        <label for="lname">Password:</label><br>
+                        <input type="text" id="pword" name="lname" value="Password"><br><br>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="base">
-
             <div class="card">Current Conditions</div>
             <div class="card">Alerts</div>
             <div class="card">24 Hour Forecast</div>

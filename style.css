@@ -13,7 +13,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: brown;
+    background-color: rgb(104, 99, 93);
     flex: 3;
 }
 .base {
@@ -21,13 +21,21 @@ main {
     background-color: rgb(104, 99, 93);
     justify-content: space-evenly;
     align-items: flex-start;
-    /* margin: 20px; */
+    margin: 20px;
     flex-wrap: wrap;
     flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: azure;
-    margin-top: 50px;
+    border-radius: 10px;
+    margin: 50px;
+    min-height: 300px;
+    min-width: 200px;
 }
 .top {
     background-color: rgb(5, 110, 110);
@@ -35,24 +43,34 @@ main {
     justify-content: space-around;
     align-items: baseline;
     padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .side {
     height: 100vh; 
-    /* width: 160px; */
-    max-width: 160px;  
+    max-width: 200px;  
     z-index: 1; 
     top: 0; 
     left: 0;
     flex: 1;
-    background-color: azure;
+    background-color: rgb(5, 110, 110);
     overflow-x: hidden; 
-    padding-top: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
-
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.active {
+    background-color: red;
+}
 
 
 
