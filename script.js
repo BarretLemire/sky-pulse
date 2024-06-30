@@ -1,3 +1,5 @@
+"use strict";
+
 const weatherForm = document.getElementById("form-1");
 const locationInput = document.getElementById("location");
 const card = document.querySelector(".card");
